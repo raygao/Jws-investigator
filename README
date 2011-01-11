@@ -1,4 +1,4 @@
-==JWS-Investigator (Java Cversion) 
+==Jws-Investigator (Java version) 
 This project was developed by Raymond Gao, on a consulting project. It is a tool for showing detailed information abouts portal objects inside the Oracle Webcenter Interaction (aka. BEA Aqualogic / Plumtree) portal server. It supports following types of portal objects:
 1. WebServices
 2. Portlets (aka PT Gadgets)
@@ -13,6 +13,46 @@ In fact, you can consider it as a headerless portal health analysis (e.g. for fo
 2. IDK/EDK - Used for builingd portlet. This API is in fact a subset of the Server API.
 
 Furthermore, with a little tweaking, this project can be enhanced to show detailed information about just every types of the portal objects.
+
+==How it works
+JWS Investigator is a Windows application that lists all web services, portlets, communities, and communities pages deployed in your portal. There is an option to show only active web services. The tool is used for portal administration, e.g. housekeeping, inventory tracking, etc.
+
+The application is modeled after Factory pattern (just search GoF on google) and is easily extensible to provide lookup service for other types of ALUI objects, card, users, filter, etc. By copying and modifying the XXXDatable & XXXInfoMgr files, you can provide lookup service for other portal objects.  To promote knowledge sharing, this is an open source project. I have uploaded the entire solution to dev2dev. I sincerely hope other people will participate in this project and develop a cool remote management console for ALUI portal.
+
+t uses ALUI portal server API to get an "IPTObjectManager" for web services and renders the result in a "DataGridView". You can save the result to a CSV file.
+
+This tool requires Dot Net 2.0 (Visual Studio 2005) or Java SDK, ALUI G6 MP1 libraries, and IDK 5.4.
+ 
+==Timeline
+Author:
+
+Raymond Gao
+
+Last Updated:
+
+July 7, 2007
+
+Project Version:
+
+0.96 
+
+Related BEA Product(s) & Versions:
+
+ALUI Portal (DotNet). To compile the existing project, it requires Visual Studio 2005 (DotNet 2.0) and ALUI portal server libraries.
+
+Download Now:
+
+0.96 (latest) - Please use Subversion to check out of the code repository and build.
+
+Previous release
+
+--------------------
+
+0.95 release (binary - Dot Net)
+
+0.95 src -release (Dot Net)
+
+0.95 release (Java binary)
 
 ==License
 It is released under the Apache 2 license. 
