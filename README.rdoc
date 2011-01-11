@@ -1,0 +1,21 @@
+==Jws-Investigator (Java version) 
+This project was developed by Raymond Gao, on a consulting project. It is a tool for showing detailed information abouts portal objects inside the Oracle Webcenter Interaction (aka. BEA Aqualogic / Plumtree) portal server. It supports following types of portal objects:
+1. WebServices
+2. Portlets (aka PT Gadgets)
+3. AdminFolders
+4. CommunityPages
+5. Community
+(See InfoMgrFactory.cs for detail)
+
+In fact, you can consider it as a headerless portal health analysis (e.g. for forensic reconstruction or portal migration) tool. It shows the rich features of the Plumtree Server API. 
+(Note, there are two types of API.)
+1. Plumtree Server API - used in this project
+2. IDK/EDK - Used for builingd portlet. This API is in fact a subset of the Server API.
+
+Furthermore, with a little tweaking, this project can be enhanced to show detailed information about just every types of the portal objects.
+
+==License
+It is released under the Apache 2 license. 
+see http://www.apache.org/licenses/LICENSE-2.0.html
+
+There is no warranty whatsoever. You are free to reuse and redistribute it (whole or part) as you wish provided that you show me as the original author.
